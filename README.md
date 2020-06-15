@@ -9,7 +9,7 @@ The follwing node-red modules are required:
 #node-red-node-pi-gpio
 
 RuuviTag related:
-#ode-red-contrib-noble
+#node-red-contrib-noble
 #node-red-contrib-ruuvitag
 
 Ultrasonic sensor (SRF04):
