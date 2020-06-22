@@ -52,14 +52,12 @@ Future Plans
   
 Notes
 --------
-
-Notes:
--DHT22s are unreliable at best, humidity typically needs a +/- adjustment of 10 against a known source to be accurate. Temperature is usually 1-2c off. Ruuvitags are ideal but require a Pi 3 or greater to work properly, for that reason I've provided links on how to implement a RuuviTag, but the code is currently using a DHT22. Do note exceed recommended wire length for the DHT. The function blocks prior to passing the data contain adjustments for both temperature and humidity that you will need to adjust for your application.
--If you plan on using a RuuviTag, make sure to do a full Node-Red install as per the following: https://nodered.org/docs/getting-started/raspberrypi, this is because pre-packaged Node-Red install on the pi is limited. It will work just fine for simpler DHT22/relay code, but i had problems when adding BLE scanning.
+  -  DHT22s are unreliable at best, humidity typically needs a +/- adjustment of 10 against a known source to be accurate. Temperature is usually 1-2c off. Ruuvitags are ideal but require a Pi 3 or greater to work properly, for that reason I've provided links on how to implement a RuuviTag, but the code is currently using a DHT22. Do note exceed recommended wire length for the DHT. The function blocks prior to passing the data contain adjustments for both temperature and humidity that you will need to adjust for your application.
+  -  If you plan on using a RuuviTag, make sure to do a full Node-Red install as per the following: https://nodered.org/docs/getting-started/raspberrypi, this is because pre-packaged Node-Red install on the pi is limited. It will work just fine for simpler DHT22/relay code, but i had problems when adding BLE scanning.
 
 Instructions on how to use RuuviTags in Node-Red:
-https://lab.ruuvi.com/node-red/
-https://github.com/ojousima/node-red
+  -  https://lab.ruuvi.com/node-red/
+  -  https://github.com/ojousima/node-red
 
 Screenshots
 -----------
