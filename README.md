@@ -84,11 +84,11 @@ Using GardenBro
 
   -  Once you have the Raspberry Pi booted into the Raspbian OS and you are connected to your WiFi network, perform your typical "sudo apt update" and "sudo apt full-upgrade" procedures in the terminal. Raspberry Pi comes with Node-Red preinstalled and it's perfectly fine if you plan on only using relays and a DHT, even WiFi plugs work, but for RuuviTags a full Node-Red install is required. Run the following command "bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)", for more details visit https://nodered.org/docs/getting-started/raspberrypi, it will:
 
-  -  remove the pre-packaged version of Node-RED and Node.js if they are present
-  -  install the current Node.js LTS release using the NodeSource. If it detects Node.js is already installed from NodeSource, it will ensure it is at least Node 8, but otherwise leave it alone
-  -  install the latest version of Node-RED using npm
-  -  optionally install a collection of useful Pi-specific nodes
-  -  setup Node-RED to run as a service and provide a set of commands to work with the service
+    -  remove the pre-packaged version of Node-RED and Node.js if they are present
+    -  install the current Node.js LTS release using the NodeSource. If it detects Node.js is already installed from NodeSource, it will ensure it is at least Node 8, but otherwise leave it alone
+    -  install the latest version of Node-RED using npm
+    -  optionally install a collection of useful Pi-specific nodes
+    -  setup Node-RED to run as a service and provide a set of commands to work with the service
 
   -  Start up Node-Red and a terminal will be displayed, once NR is running have it automatically start on boot by entering "sudo systemctl enable nodered.service". Navigate to http://10.0.0.81:1880/ on any computer connected to your network and you should see the NR IDE. Simply import the code and get started, NR automatically broadcasts the dashboard at http://10.0.0.81:1880/ui.
   -  To connect TP-Link HS103 WiFi plugs, first power on the device and go through the setup procedures using the Kasa app https://play.google.com/store/apps/details?id=com.tplink.kasa_android&hl=en_CA. Once setup on the plug is complete, turn the plug off on the app, and find the devices IP address however you see fit. Enter the IP address on the corresponding plugs node and it should immediately say "connected" once deployed.
@@ -96,16 +96,15 @@ Using GardenBro
 License
 -------
 
-GardenBro is a simply Node-Red program: you can redistribute it and/or modify it under
+GardenBro is a simple Node-Red program: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free
 Software Foundation, either version 3 of the License, or (at your
 option) any later version.
 
 GardenBro is distributed in the hope that it will be useful, but WITHOUT
 ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
-FITNESS FOR A PARTICULAR PURPOSE. See the `GNU General Public
-License <http://www.gnu.org/licenses/gpl-3.0.en.html>`__ for more
-details.
+FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public
+License for more details.
 
 A full copy of the GNU General Public License can be found at
 http://www.gnu.org/licenses/gpl-3.0.en.html
