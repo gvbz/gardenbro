@@ -62,7 +62,7 @@ Instructions on how to use RuuviTags in Node-Red:
 Pictures
 -----------
 
-https://ledgardener.com/forum/download/file.php?id=4305&mode=view
+https://ledgardener.com/forum/viewtopic.php?f=35&t=5698
 
 Install GardenBro
 -----------------
