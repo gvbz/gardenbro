@@ -75,8 +75,10 @@ Using GardenBro
     -  optionally install a collection of useful Pi-specific nodes
     -  setup Node-RED to run as a service and provide a set of commands to work with the service
 
-  -  Start up Node-Red and a terminal will be displayed, once NR is running have it automatically start on boot by entering "sudo systemctl enable nodered.service". Navigate to http://10.0.0.81:1880/ on any computer connected to your network and you should see the NR IDE. Simply import the code and get started, NR automatically broadcasts the dashboard at http://10.0.0.81:1880/ui.
+  -  Start up Node-Red and a terminal will be displayed, once NR is running have it automatically start on boot by entering "sudo systemctl enable nodered.service". Navigate to http://10.0.0.81:1880/ on any computer connected to your network and you should see the NR IDE. Simply import the code by copying the text file and get started, NR automatically broadcasts the dashboard at http://10.0.0.81:1880/ui.
+  -  Adjust the Raspberry pi nodes for your connection points, don't forget the DHT22. All the pi nodes make this straightforward regardless of what pinout convention you use.
   -  To connect TP-Link HS103 WiFi plugs, first power on the device and go through the setup procedures using the Kasa app https://play.google.com/store/apps/details?id=com.tplink.kasa_android&hl=en_CA. Once setup on the plug is complete, turn the plug off on the app, and find the devices IP address however you see fit. Enter the IP address on the corresponding plugs node and it should immediately say "connected" once deployed.
+  -  If you want to try out the RuuviTag simply follow the instructions in the provided links. They can explain it far better than me and example code is provided, import it just like you did with GardenBro.
   
 Required Node-Red Modules
 -----------------
