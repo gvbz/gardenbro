@@ -64,21 +64,6 @@ Pictures
 
 https://ledgardener.com/forum/viewtopic.php?f=35&t=5698
 
-Install GardenBro
------------------
-
-The follwing node-red modules are required:
-
-  -  node-red-contrib-bigtimer
-  -  node-red-contrib-dht-sensor
-  -  node-red-contrib-tplink
-  -  node-red-dashboard
-  -  node-red-node-pi-gpio
-
-RuuviTag related:
-  -  node-red-contrib-noble
-  -  node-red-contrib-ruuvitag
-
 Using GardenBro
 -----------------
 
@@ -92,6 +77,20 @@ Using GardenBro
 
   -  Start up Node-Red and a terminal will be displayed, once NR is running have it automatically start on boot by entering "sudo systemctl enable nodered.service". Navigate to http://10.0.0.81:1880/ on any computer connected to your network and you should see the NR IDE. Simply import the code and get started, NR automatically broadcasts the dashboard at http://10.0.0.81:1880/ui.
   -  To connect TP-Link HS103 WiFi plugs, first power on the device and go through the setup procedures using the Kasa app https://play.google.com/store/apps/details?id=com.tplink.kasa_android&hl=en_CA. Once setup on the plug is complete, turn the plug off on the app, and find the devices IP address however you see fit. Enter the IP address on the corresponding plugs node and it should immediately say "connected" once deployed.
+  
+Required Node-Red Modules
+-----------------
+
+The follwing node-red modules are required for the program to function. Use the palette manager and install the following:
+  -  node-red-contrib-bigtimer
+  -  node-red-contrib-dht-sensor
+  -  node-red-contrib-tplink
+  -  node-red-dashboard
+  -  node-red-node-pi-gpio
+
+RuuviTag related:
+  -  node-red-contrib-noble
+  -  node-red-contrib-ruuvitag
 
 License
 -------
